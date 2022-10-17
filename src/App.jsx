@@ -1,5 +1,6 @@
-import NavBar from './components/NavBar';
-import Sobre from './components/Sobre';
+import NavBar from './components/Organismos/NavBar';
+import Skills from './components/Organismos/Skills';
+import Sobre from './components/Organismos/Sobre';
 
 
 function App() {
@@ -17,5 +18,6 @@ const SlowAndFast = () => (
   <>
     <NavBar/>
     <Sobre/>
+    <Skills/>
   </>
 );
