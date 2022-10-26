@@ -1,0 +1,59 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border: 2px solid aqua;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 225, 225, 0.1);
+}  
+
+.cardTop{
+    display: flex;
+    flex: 1;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    min-width:300px;
+    min-height: 150px;
+}   
+
+.cardBottom{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: aqua;
+    width: 200px;
+    min-width: 300px;
+
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    h4{
+        color: black;
+        font-size: 30px;
+    }
+    ul{
+        padding-left: 20px;
+        padding-top: 20px;
+        color: black;   
+    }
+    li{
+        margin: 10px;
+    }
+}
+
+.spin{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
