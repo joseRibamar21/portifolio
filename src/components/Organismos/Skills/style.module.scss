@@ -1,8 +1,5 @@
 .containerMain {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    
     h2{
         font-size: xx-large;
         margin-left: 2%;
@@ -10,9 +7,12 @@
 }
 
 .listCard{
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-snap-type: x;
+    scroll-snap-type: x proximity;
     gap: 30px;
 }
 

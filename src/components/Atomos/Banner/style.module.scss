@@ -1,6 +1,5 @@
 .container {
     display: flex;
-    
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -8,8 +7,8 @@
 
 .imagem {
     width: 100%;
-    min-height: 400px;
-    object-fit: fill;
+    min-height: 700px;
+    object-fit: cover;
     z-index: 0;
 }
 
@@ -33,6 +32,7 @@
 
 .columnContainer{
     display: flex;
+    padding: 0px 5px 0px 5px;
     justify-content: center;
     gap: calc(3%);
     flex-direction: column;
@@ -42,6 +42,7 @@
     width: 20%;
     /* width: 310px;
     height: 386px; */
+    min-width: 300px;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

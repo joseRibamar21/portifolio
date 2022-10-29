@@ -18,7 +18,7 @@ export default function Banner() {
                     </span>
 
                 </div>
-                <img className={style.foto} src="./jose2.png" alt="jose"></img>
+                <img className={style.foto} src="./jose2.png" alt="jose"/>
             </div>
         </div>
     )
