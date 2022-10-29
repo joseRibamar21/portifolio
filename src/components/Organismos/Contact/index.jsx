@@ -1,5 +1,4 @@
 import style from "./style.module.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Contact() {
   return (
