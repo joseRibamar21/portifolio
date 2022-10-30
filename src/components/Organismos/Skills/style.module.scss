@@ -1,12 +1,12 @@
 .containerMain {
-    
-    h2{
+
+    h2 {
         font-size: xx-large;
         margin-left: 2%;
     }
 }
 
-.listCard{
+.listCard {
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -16,26 +16,26 @@
     gap: 30px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     margin: 20px;
     border: 2px solid aqua;
     border-radius: 20px;
     box-shadow: 0 4px 30px rgba(0, 225, 225, 0.1);
-}   
+}
 
-.cardTop{
+.cardTop {
     display: flex;
     flex: 1;
     justify-items: center;
     justify-content: center;
     align-items: center;
-    min-width:300px;
+    min-width: 300px;
     min-height: 150px;
-}   
+}
 
-.cardBottom{
+.cardBottom {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -46,31 +46,98 @@
     min-height: 200px;
     border-radius: 0px 0px 10px 10px;
     padding: 10px;
-    h4{
+
+    h4 {
         color: black;
         font-size: 30px;
     }
-    ul{
+
+    ul {
         padding-left: 20px;
         padding-top: 20px;
-        color: black;   
-        
+        color: black;
+
     }
 }
 
-.spin{
+.spin {
     animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; 
+    animation-timing-function: linear;
 
 }
 
 @keyframes spin {
     from {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-        transform:rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.ball {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+
+.yiggle {
+    animation: wiggle 2s linear infinite;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
     }
 }

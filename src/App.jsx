@@ -18,14 +18,6 @@ export default App
 const SlowAndFast = () => (
   <>
     <Banner />
-    <div style={{
-      background: "rgba(255, 255, 255, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(0, 6, 16, 0.1) 40%, rgba(0, 6, 16, 0.1) 75%, rgba(0, 6, 16, 1) 100%) repeat scroll 0 0",
-      position: "relative",
-      marginTop: "-200px",
-      height: "200px",
-    }}>
-
-    </div>
     <a href='#skills'>
       <img src='./lamp.png' alt='lamp' style={{
         position: "relative",
