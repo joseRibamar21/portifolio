@@ -30,7 +30,8 @@ const SlowAndFast = () => (
     <div  ></div>
     <img src='caminho.png' style={{
         paddingLeft: "4.6%",
-        width: "5%"
+        width: "5%",
+        height: "90px"
       }}/>
     <div id='skills'></div>
     <Skills/>
