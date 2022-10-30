@@ -1,11 +1,11 @@
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import { Parallax } from "react-scroll-parallax";
 import style from "./style.module.scss";
 
 export default function Banner() {
 
     return (
         <div className={style.container}>
-            <ParallaxProvider>
+            
                 <Parallax speed={-10}>
                     <img className={style.imagem} src='./banner.png' />
                     <div style={{
@@ -16,7 +16,6 @@ export default function Banner() {
                     }}>
                     </div>
                 </Parallax>
-            </ParallaxProvider>
             <div className={style.rowContainer}>
                 <div className={style.columnContainer}>
                     <h1>
