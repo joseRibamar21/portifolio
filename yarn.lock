@@ -376,6 +376,11 @@
     "@react-spring/shared" "~9.5.5"
     "@react-spring/types" "~9.5.5"
 
+"@types/offscreencanvas@^2019.7.0":
+  version "2019.7.0"
+  resolved "https://registry.yarnpkg.com/@types/offscreencanvas/-/offscreencanvas-2019.7.0.tgz#e4a932069db47bb3eabeb0b305502d01586fa90d"
+  integrity sha512-PGcyveRIpL1XIqK8eBsmRBt76eFgtzuPiSTyKHZxnGemp2yzGzWpjYKAfK3wIMiU7eH+851yEpiuP8JZerTmWg==
+
 "@types/prop-types@*":
   version "15.7.5"
   resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
@@ -657,6 +662,13 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
   integrity sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==
+
+fast-average-color@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/fast-average-color/-/fast-average-color-9.1.1.tgz#7b2cb70a904b848e7d347b3e3612fbd84a535ca2"
+  integrity sha512-PJizLBcGb/jqUzrH66385te4+GcOK7wcUiCDvBUszdpzc/pvV1kwifvvsFygV3mS+7qwnWmK9/BrZniaOOC9ag==
+  dependencies:
+    "@types/offscreencanvas" "^2019.7.0"
 
 fill-range@^7.0.1:
   version "7.0.1"

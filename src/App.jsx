@@ -1,5 +1,6 @@
 import Banner from './components/Atomos/Banner';
 import Contact from './components/Organismos/Contact';
+import Projects from './components/Organismos/Projects';
 import Skills from './components/Organismos/Skills';
 import SoftSkills from './components/Organismos/SoftSkills';
 
@@ -36,6 +37,7 @@ const SlowAndFast = () => (
     <div id='skills'></div>
     <Skills/>
     <SoftSkills/>
+    <Projects/>
     <Contact/>
   </>
 );
