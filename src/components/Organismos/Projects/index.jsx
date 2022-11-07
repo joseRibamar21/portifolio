@@ -10,6 +10,19 @@ export default function Projects() {
       status: 'Em andamento',
       image: './portifolio.png'
     },
+    {
+      title: 'Partiu Jogar',
+      subtitle: 'Sistema de marcação de quadras.',
+      status: 'Em andamento',
+      image: './partiu-jogar.png'
+    },
+    {
+      title: 'SeedListing',
+      subtitle: '',
+      status: 'Em andamento',
+      image: './lidium.png'
+    },
+
   ]
 
   return (
@@ -17,11 +30,13 @@ export default function Projects() {
       <div className={style.buttonProject}>
         Projetos
       </div>
-      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle} colorBG="#000610" colorText="#fff" />
+      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle}  colorText="#fff" />
       <div className={style.grid}>
-      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle} colorBG="#000030" colorText="#fff" />
-      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle} colorBG="#000610" colorText="#fff" />
-      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle} colorBG="#000610" colorText="#fff" />
+        {data.map((e, i) => {
+          if (i !== 0) {
+            return <CardProduct title={e.title} image={e.image} subtitle={e.subtitle}  colorText="#fff" />
+          }
+        })}
       </div>
     </div>
   )
