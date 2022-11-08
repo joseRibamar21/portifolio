@@ -8,7 +8,7 @@ export default function Projects() {
       title: 'Potifolio',
       subtitle: 'Meu espacinho para compartilhar meus projetos!',
       status: 'Em andamento',
-      image: './portifolio.png'
+      image: './portifolio.png',
     },
     {
       title: 'Partiu Jogar',
@@ -17,10 +17,16 @@ export default function Projects() {
       image: './partiu-jogar.png'
     },
     {
-      title: 'SeedListing',
+      title: 'Lidim Labs',
       subtitle: '',
       status: 'Em andamento',
       image: './lidium.png'
+    },
+    {
+      title: 'NWL Esports',
+      subtitle: 'Esse projeto faz parte da NLW e-Sports trilha Ignite promovido pela RocketSeat em Setembro de 2022.',
+      status: 'Em andamento',
+      image: './nwl_1.png'
     },
 
   ]
@@ -30,7 +36,7 @@ export default function Projects() {
       <div className={style.buttonProject}>
         Projetos
       </div>
-      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle}  colorText="#fff" />
+      <CardProduct title={data[0].title} image={data[0].image} subtitle={data[0].subtitle}  colorText="#fff"  isOpen={false}/>
       <div className={style.grid}>
         {data.map((e, i) => {
           if (i !== 0) {
